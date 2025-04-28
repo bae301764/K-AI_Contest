@@ -3,7 +3,7 @@
 이 프로젝트는 2023 제 3회 K-인공지능 제조데이터 분석 경진대회에서 183팀 중 장려상(4등)을 수상한 데이터 분석 프로젝트입니다.
 프로젝트의 목적은 인공지능 중소벤처 제조플랫폼(KAMP) 내 등재된 제조AI데이터셋을 활용하여 중소 제조기업이 직면할 수 있는 문제를 해결하거나 개선할 수 있는 우수한 인공지능 분석 모델을 개발하는 것입니다.
 
-공모전 사이트 : https://www.kamp-ai.kr/contestAssignInfo?CPT_SEQ=20
+공모전 url : https://www.kamp-ai.kr/contestAssignInfo?CPT_SEQ=20
 
 
 데이터셋 : 열처리 품질보증 제조AI데이터셋
@@ -11,15 +11,16 @@ https://www.kamp-ai.kr/aidataDetail?AI_SEARCH=%EC%97%B4%EC%B2%98%EB%A6%AC+%ED%92
 
 본 프로젝트에서는 아래 사항들을 기반으로 모델링을 진행하였습니다.
 - 배정번호 별로 불량률에 따라 불량 공정, 정상 공정으로 정의 후 라벨링 진행, 60초 단위의 time series로 데이터셋 구성
-- 불균형한 데이터셋으로 인한 과적합을 방지하기 위한 다운 샘플링
+- 불량 레이블 1,569개, 정상 레이블 34,943개로 불균형한 데이터셋으로 인한 과적합을 방지하기 위한 다운 샘플링
 - LSTM, GRU, TCN, Transformer을 기반으로 학습
 - 가장 성능이 좋은 모델을 기반으로 shapley value를 계산해 불량에 기여하는 변수를 파악
 
 
 # code
-- 시계열 모델 별 / 불량 공정 데이터 개수 별 모델링 코드(jupyter)
+- 모델 별 / 정상 공정 데이터 개수 별 모델링 코드(jupyter)
 - ex) 3000_TCN의 경우 3000개로 다운샘플링된 정상 데이터과 기존 불량 데이터를 포함한 데이터셋을 이용하여 TCN 모델을 학습한 코드
-
+- EDA.ipnb에 간단한 데이터 시각화 및 데이터 파악 코드 포함
+  
 # code 설명
   - Utils & preprocess : 각 공정 별로 60초 단위의 window 추출, scaling, Dataloader, test와 plot 함수 정의
   - Model : 모델 구조 정의
