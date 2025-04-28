@@ -12,7 +12,7 @@ https://www.kamp-ai.kr/aidataDetail?AI_SEARCH=%EC%97%B4%EC%B2%98%EB%A6%AC+%ED%92
 본 프로젝트에서는 아래 사항들을 기반으로 모델링을 진행하였습니다.
 - 배정번호 별로 불량률에 따라 불량 공정, 정상 공정으로 정의 후 라벨링 진행, 60초 단위의 time series로 데이터셋 구성
 - 불량 레이블 1,569개, 정상 레이블 34,943개로 불균형한 데이터셋으로 인한 과적합을 방지하기 위한 다운 샘플링
-- LSTM, GRU, TCN, Transformer을 기반으로 학습
+- LSTM, GRU, TCN, Transformer 모델 학습
 - 가장 성능이 좋은 모델을 기반으로 shapley value를 계산해 불량에 기여하는 변수를 파악
 
 
