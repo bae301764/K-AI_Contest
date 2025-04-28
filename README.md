@@ -16,10 +16,10 @@ https://www.kamp-ai.kr/aidataDetail?AI_SEARCH=%EC%97%B4%EC%B2%98%EB%A6%AC+%ED%92
 - 가장 성능이 좋은 모델을 기반으로 shapley value를 계산해 불량에 기여하는 변수를 파악
 
 
-# code
+# code 폴더
 - 모델 별 / 정상 공정 데이터 개수 별 모델링 코드(jupyter)
 - ex) 3000_TCN의 경우 3000개로 다운샘플링된 정상 데이터과 기존 불량 데이터를 포함한 데이터셋을 이용하여 TCN 모델을 학습한 코드
-- EDA.ipnb에 간단한 데이터 시각화 및 데이터 파악 코드 포함
+- EDA.ipynb에 간단한 데이터 시각화 및 데이터 파악 코드 포함
   
 # code 설명
   - Utils & preprocess : 각 공정 별로 60초 단위의 window 추출, scaling, Dataloader, test와 plot 함수 정의
