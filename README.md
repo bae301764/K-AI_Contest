@@ -20,10 +20,18 @@ https://www.kamp-ai.kr/aidataDetail?AI_SEARCH=%EC%97%B4%EC%B2%98%EB%A6%AC+%ED%92
 - 시계열 모델 별 / 불량 공정 데이터 개수 별 모델링 코드(jupyter)
 - ex) 3000_TCN의 경우 3000개로 다운샘플링된 정상 데이터과 기존 불량 데이터를 포함한 데이터셋을 이용하여 TCN 모델을 학습한 코드
 
+# code 설명
+  - Utils & preprocess : 각 공정 별로 60초 단위의 window 추출, scaling, Dataloader, test와 plot 함수 정의
+  - Model : 모델 구조 정의
+  - trainer : train, validation 코드 정의
+  - Main : 데이터 전처리 실행 후 모델링, 성능 확인
+  - Explain (4000_GRU 만 해당) : 각 예측값에 대해 변수 기여도 확인 코드
+
 # model_weight
 - code에 있는 모델들에 대하여 각각 validation loss가 가장 작을 때의 best_weight 저장된 폴더
 
 # 모델링 결과
-- 정상 데이터 4000개를 사용하여 GRU를 학습한 경우 가장 좋은 성능을 보임
+- 정상 데이터 4000개로 다운샘플링한 데이터셋을 사용하여 GRU를 학습한 경우 가장 좋은 성능을 보임
+- 해당 모델에 대해 shaley value 적용하여 예측에 영향을 준 변수들의 기여도를 확인할 수 있음
 ![K-AI 성능](./K-AI%20성능.JPG)
 - 자세한 전처리 과정과 실험 세팅은 첨부된 보고서 p.17 ~ p.21에 서술
