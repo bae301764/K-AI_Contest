@@ -25,4 +25,5 @@ https://www.kamp-ai.kr/aidataDetail?AI_SEARCH=%EC%97%B4%EC%B2%98%EB%A6%AC+%ED%92
 
 # 모델링 결과
 - 정상 데이터 4000개를 사용하여 GRU를 학습한 경우 가장 좋은 성능을 보임
+![K-AI 성능](./K-AI%20성능.JPG)
 - 자세한 전처리 과정과 실험 세팅은 첨부된 보고서 p.17 ~ p.21에 서술
