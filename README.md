@@ -4,6 +4,8 @@
 프로젝트의 목적은 인공지능 중소벤처 제조플랫폼(KAMP) 내 등재된 제조AI데이터셋을 활용하여 중소 제조기업이 직면할 수 있는 문제를 해결하거나 개선할 수 있는 우수한 인공지능 분석 모델을 개발하는 것입니다.
 
 공모전 사이트 : https://www.kamp-ai.kr/contestAssignInfo?CPT_SEQ=20
+
+
 데이터셋 : 열처리 품질보증 제조AI데이터셋
 https://www.kamp-ai.kr/aidataDetail?AI_SEARCH=%EC%97%B4%EC%B2%98%EB%A6%AC+%ED%92%88%EC%A7%88%EB%B3%B4%EC%A6%9D&page=1&DATASET_SEQ=60&DISPLAY_MODE_SEL=CARD&EQUIP_SEL=&GUBUN_SEL=&FILE_TYPE_SEL=&WDATE_SEL=
 
